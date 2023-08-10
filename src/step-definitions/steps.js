@@ -1,17 +1,6 @@
 import {Given,When,Then} from '@wdio/cucumber-framework';
-import {expect, $} from '@wdio/globals'
 
 
-const LoginPage = require('../pageobjects/login.page');
-const SecurePage = require('../pageobjects/secure.page');
-
-const pages = {
-    login: LoginPage
-}
-
-Given(/^I am on the (\w+) page$/, async (page) => {
-    // await pages[page].open()
-});
 
 When(/^I login with (\w+) and (.+)$/, async (username, password) => {
     // await LoginPage.login(username, password)

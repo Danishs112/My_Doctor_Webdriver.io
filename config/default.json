@@ -1,0 +1,7 @@
+{
+  "homeUrl":"http://my-doctors.net",
+  "urls":{
+    "login":"/auth/login",
+    "patient signup":"/auth/signup"
+  }
+}
