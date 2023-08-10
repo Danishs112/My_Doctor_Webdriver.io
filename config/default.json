@@ -1,7 +1,12 @@
 {
   "homeUrl":"http://my-doctors.net",
+  "patientEmail":"danishsoma112@gmail.com",
+  "patientPassword":"Patient@123",
+  "doctorEmail":"danishdoctor@gmail.com",
+  "doctorPassword":"Doctor@123",
   "urls":{
     "login":"/auth/login",
-    "patient signup":"/auth/signup"
+    "patient signup":"/auth/signup",
+    "doctor signup":"/auth/doctor-register"
   }
 }

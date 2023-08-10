@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "target":"ES5",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "moduleResolution":"node",
+        "types": [
+            "node",
+            "@wdio/cucumber-framework"
+        ]
+    },
+
+}
