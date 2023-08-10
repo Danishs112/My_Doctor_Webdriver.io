@@ -5,6 +5,7 @@ exports.config = {
     // ====================
     // WebdriverIO supports running e2e tests as well as unit and component tests.
     runner: 'local',
+   
     //
     // ==================
     // Specify Test Files
@@ -85,7 +86,7 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
+    baseUrl: 'http://my-doctors.net/',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
