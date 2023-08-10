@@ -1,3 +1,5 @@
+const HEADLESS_RUN = false;
+
 export const config = {
     //
     // ====================
@@ -27,8 +29,9 @@ export const config = {
     ],
 
     suites: {
-        login: [
-            './src/step-definitions/login.js',
+        auth: [
+            './src/features/login.feature',
+            './src/features/patientsignup.feature',
         ]
     },
     // Patterns to exclude.
@@ -51,7 +54,7 @@ export const config = {
     // and 30 processes will get spawned. The property handles how many capabilities
     // from the same test should run tests.
     //
-    maxInstances: 10,
+    maxInstances: 1,
     //
     // If you have trouble getting all important capabilities together, check out the
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
@@ -59,9 +62,9 @@ export const config = {
     //
     capabilities: [{
         browserName: 'msedge',
-        // 'ms:edgeOptions': {
-        //     args: ['--headless']
-        // }
+        'ms:edgeOptions': {
+            args: HEADLESS_RUN ? ["--headless"] : [],
+        }
     }],
 
     //
@@ -164,6 +167,14 @@ export const config = {
         // <boolean> Enable this config to treat undefined definitions as warnings.
         ignoreUndefinedDefinitions: false
     },
+
+    before: function() {
+        console.log('started run the tests');
+    },
+
+    after: function(){
+        console.log("exectued all the tests")
+    }
     
     //
     // =====
