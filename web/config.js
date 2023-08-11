@@ -59,3 +59,7 @@ export const getHomeUrl = function () {
 export const getUrls = function(url) {
     return config.get("urls." + url)
 }
+
+export const getCredentials = function(credentials) {
+    return config.get(credentials)
+}

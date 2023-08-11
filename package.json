@@ -8,7 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./wdio.conf.js",
-    "wdiotags":"wdio ./wdio.conf.js --cucumberOpts.tagExpression"
+    "wdiotags": "wdio ./wdio.conf.js --cucumberOpts.tagExpression"
   },
   "author": "",
   "license": "ISC",
@@ -20,6 +20,11 @@
     "@wdio/spec-reporter": "^8.14.0"
   },
   "dependencies": {
-    "config": "^3.3.9"
+    "base-64": "^1.0.0",
+    "config": "^3.3.9",
+    "fs": "^0.0.1-security",
+    "hamcrest": "^0.0.3",
+    "path": "^0.12.7",
+    "url": "^0.11.1"
   }
 }

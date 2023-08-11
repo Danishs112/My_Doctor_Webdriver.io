@@ -1,12 +1,16 @@
 {
   "homeUrl":"http://my-doctors.net",
-  "patientEmail":"danishsoma112@gmail.com",
-  "patientPassword":"Patient@123",
-  "doctorEmail":"danishdoctor@gmail.com",
-  "doctorPassword":"Doctor@123",
-  "urls":{
+  "PATIENT_EMAIL":"UGF0aWVudDEyM0BnbWFpbC5jb20=",
+  "PATIENT_PASSWORD":"UGF0aWVudEAxMjM=",
+  "DOCTOR_EMAIL":"RG9jdG9yMTIzQGdtYWlsLmNvbQ==",
+  "DOCTOR_PASSWORD":"RG9jdG9yQDEyMzQ=",
+  "INVALID_EMAIL":"dGVzdDEyM0BnbWFpbC5jb20=",
+  "INVALID_PASSWORD":"Test@1234",
+
+  "urls": {
     "login":"/auth/login",
-    "patient signup":"/auth/signup",
-    "doctor signup":"/auth/doctor-register"
+    "patientsignup":"/auth/signup",
+    "doctorsignup":"/auth/doctor-register"
   }
+
 }

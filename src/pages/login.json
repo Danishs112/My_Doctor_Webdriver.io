@@ -1,3 +1,8 @@
 {
-    "name":"dansih"
+    "name":"dansih",
+    "emailinput":"#emailOrMobile",
+    "passwordinput":"#password",
+    "login":"form button.MuiButton-contained.MuiButton-containedPrimary span",
+    "authorization":"header div.MuiAvatar-circular"
+    
 }
