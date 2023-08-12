@@ -11,11 +11,11 @@ class WebButton {
           }
        } catch(error){
         console.log('Not able to click or find element',error)
-      }
+       }
 
  
                          
-}
+      }
 }
 
 export default WebButton

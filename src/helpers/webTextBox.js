@@ -3,7 +3,8 @@ class WebTextBox {
 
     async setText(element,text){
         try{
-           await browser.$(element).setValue(text) 
+           await browser.$(element).clearValue();
+           await browser.$(element).setValue(text); 
             console.log('Typing of the field with value: ' + text);
        
         }

@@ -12,6 +12,10 @@ class BasePage {
         return getCredentials(credentials)
     }
 
+    getVisitedPageUrl(url){
+        return  getUrls(url.split(" ").join("").toLocaleLowerCase())
+    }
+
 }
 
 export default BasePage

@@ -20,6 +20,10 @@ class GenericHelper {
         var locator = objectRepo.getSelector(cred);
         return locator
     }
+
+    async getCurrentPageUrl(){
+        return await browser.getUrl();
+    }
     
     
 
